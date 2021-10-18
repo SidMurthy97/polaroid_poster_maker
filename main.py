@@ -23,8 +23,8 @@ print(cover_art)
 print(album_tracks)
 print(album_name)
 
+#retrieve image and place in new folder
 img_data = requests.get(cover_art).content
-
 filename = album_name + "/cover.png"
 os.makedirs(os.path.dirname(filename), exist_ok=True)
 
